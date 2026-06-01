@@ -1,0 +1,328 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #0b0d17;
+    color: #eaeaea;
+    line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR (MODERN STYLE)
+========================= */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-section img {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(124, 92, 255, 0.5);
+}
+
+nav h2 {
+    font-size: 18px;
+    color: #b9a7ff;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #7c5cff;
+    color: #fff;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+h1 {
+    text-align: center;
+    margin: 25px 0 10px;
+    font-size: 32px;
+    color: #c7b6ff;
+}
+
+h2 {
+    color: #b9a7ff;
+}
+
+/* =========================
+   CONTAINERS
+========================= */
+
+.server-info,
+.rules-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* =========================
+   CARDS (UNIVERSAL BOX STYLE)
+========================= */
+
+.info-box,
+.rule,
+#feed > div {
+    background: linear-gradient(145deg, #141428, #101020);
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 14px;
+    border: 1px solid #2a2a40;
+    box-shadow: 0 0 15px rgba(124, 92, 255, 0.08);
+    transition: 0.3s;
+}
+
+.info-box:hover,
+.rule:hover,
+#feed > div:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(124, 92, 255, 0.2);
+}
+
+/* =========================
+   TEXT STYLING
+========================= */
+
+p {
+    color: #cfcfcf;
+}
+
+strong {
+    color: #ffffff;
+}
+
+/* =========================
+   ANNOUNCEMENTS FEED
+========================= */
+
+#feed {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.back-btn {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.back-btn a {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #7c5cff;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(124, 92, 255, 0.3);
+}
+
+.back-btn a:hover {
+    background: #5a3fdc;
+    transform: scale(1.05);
+}
+
+/* =========================
+   RULES INTRO TEXT
+========================= */
+
+.rules-intro {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #aaa;
+}
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 250px;
+}
+
+.logo-section img {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.logo-section h2 {
+    font-size: 16px;
+    margin: 0;
+    white-space: nowrap;
+}/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero p {
+    margin-top: 15px;
+    color: #cfcfcf;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn.primary {
+    background: #7c5cff;
+    color: white;
+    box-shadow: 0 0 10px rgba(124, 92, 255, 0.4);
+}
+
+.btn.primary:hover {
+    background: #5a3fdc;
+    transform: scale(1.05);
+}
+
+.btn.secondary {
+    background: transparent;
+    border: 1px solid #7c5cff;
+    color: #7c5cff;
+}
+
+.btn.secondary:hover {
+    background: #7c5cff;
+    color: white;
+}
+
+/* =========================
+   FEATURES SECTION
+========================= */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+}
+
+.card {
+    background: #141428;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #2a2a40;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(124, 92, 255, 0.2);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    border-top: 1px solid #2a2a40;
+    margin-top: 40px;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.server-info,
+.rules-container,
+#feed,
+.hero {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+}

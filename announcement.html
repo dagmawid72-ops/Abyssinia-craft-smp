@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abyssinia Craft SMP - Announcements</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📢 Abyssinia Craft SMP</h1>
+<p>Official Announcement Board</p>
+
+<hr>
+
+<div id="feed"></div>
+
+<script>
+    // 📦 Starting announcements (server intro)
+    let announcements = [
+        {
+            text: "🌍 Welcome to Abyssinia Craft SMP!",
+            user: "SYSTEM"
+        },
+        {
+            text: "🚀 The server is officially starting today. Get ready for an amazing survival experience!",
+            user: "SYSTEM"
+        },
+        {
+            text: "📜 Stay updated here for all news, events, and server updates.",
+            user: "SYSTEM"
+        },
+        {
+            text: "👑 Owned by: Abyssinia Team (yp & dagmawi)",
+            user: "SYSTEM"
+        }
+    ];
+
+    function render() {
+        let feed = document.getElementById("feed");
+        feed.innerHTML = "";
+
+        announcements.forEach(a => {
+            let div = document.createElement("div");
+
+            div.innerHTML = `
+                <h3>${a.text}</h3>
+                <small>Posted by: ${a.user}</small>
+                <hr>
+            `;
+
+            feed.appendChild(div);
+        });
+    }
+
+    render();
+</script>
+
+</body>
+</html>
